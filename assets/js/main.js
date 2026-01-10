@@ -1,12 +1,6 @@
-/**
- * main.js - Movimientos y Animaciones de Interacción
- * Desarrollado para el Portafolio de Mario Suero
- */
 
 document.addEventListener('DOMContentLoaded', () => {
     
-    // 1. EFECTO DE APARICIÓN AL HACER SCROLL (Reveal Effect)
-    // Configuramos el observador para detectar cuándo los elementos entran en pantalla
     const observerOptions = {
         threshold: 0.15 // Se activa cuando el 15% del elemento es visible
     };
@@ -21,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    // Aplicamos el estilo inicial y registramos los elementos a animar
     const elementosAAnimar = document.querySelectorAll('.columna, .proyecto, .seccion-titulo, .rectangulo');
     
     elementosAAnimar.forEach(el => {
@@ -31,12 +24,11 @@ document.addEventListener('DOMContentLoaded', () => {
         revealOnScroll.observe(el);
     });
 
-    // 2. EFECTO PARALLAX SUAVE EN EL HERO
-    // El monitor y la foto se mueven ligeramente al mover el mouse
+
     const hero = document.querySelector('.hero');
     const heroImage = document.querySelector('.hero-imagen-desarrollador');
 
-    if (hero && window.innerWidth > 768) {
+    if (hero && heroImage && window.innerWidth > 768) {
         hero.addEventListener('mousemove', (e) => {
             const { clientX, clientY } = e;
             const moveX = (clientX - window.innerWidth / 2) * 0.01;
@@ -50,7 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 3. CIERRE AUTOMÁTICO DEL MENÚ (Bootstrap Fix)
     const navLinks = document.querySelectorAll('.nav-link');
     const menuColapsable = document.querySelector('.navbar-collapse');
     
@@ -62,7 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 4. SCROLL SUAVE (Smooth Scroll) CON OFFSET
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
@@ -81,7 +71,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 5. EFECTO DE BRILLO DINÁMICO EN BADGES
     const badges = document.querySelectorAll('.badge');
     badges.forEach(badge => {
         badge.addEventListener('mouseover', () => {

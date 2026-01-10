@@ -1,4 +1,3 @@
-/* --- Paleta de Colores y Variables --- */
 :root {
   --fondo-oscuro: #0a192f;
   --fondo-secundario: #112240;
@@ -155,7 +154,7 @@ h1, h2, .seccion-titulo {
   border: none;
   border-radius: 20px;
   padding: 60px;
-  margin-top: -100px; /* Efecto flotante */
+  margin-top: -100px;
 }
 
 .btn-contacto-custom {
@@ -176,7 +175,7 @@ h1, h2, .seccion-titulo {
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
-/* --- Pie de Página (Rediseño Moderno) --- */
+/* --- Pie de Página --- */
 footer {
   padding: 80px 0 40px 0;
   background: linear-gradient(to bottom, var(--fondo-oscuro), #050c16);
@@ -190,7 +189,7 @@ footer {
 }
 
 .footer-logo:hover {
-  transform: rotate(360px) scale(1.1);
+  transform: rotate(360deg) scale(1.1);
 }
 
 .footer-texto {
@@ -199,15 +198,14 @@ footer {
   letter-spacing: 1px;
 }
 
-/* Contenedor de iconos con efecto de tarjeta flotante */
 .iconos-redes-sociales a {
-  background: rgba(17, 34, 64, 0.5); /* Fondo semitransparente */
+  background: rgba(17, 34, 64, 0.5);
   color: var(--azul-hover);
   width: 55px;
   height: 55px;
   margin: 0 12px;
   text-decoration: none;
-  border-radius: 12px; /* Cuadrado redondeado moderno */
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -216,14 +214,12 @@ footer {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Efecto Hover: Resplandor de Neón */
 .iconos-redes-sociales a:hover {
   background: var(--azul-acento);
   color: white !important;
   transform: translateY(-10px) scale(1.1);
   border-color: var(--azul-hover);
-  box-shadow: 0 0 20px rgba(0, 212, 255, 0.6), 
-              0 0 40px rgba(0, 212, 255, 0.2);
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.6), 0 0 40px rgba(0, 212, 255, 0.2);
 }
 
 .iconos-redes-sociales i {
@@ -242,8 +238,92 @@ footer {
   color: var(--texto-secundario);
   opacity: 0.6;
 }
+
 /* --- Media Queries --- */
 @media (max-width: 768px) {
   body { padding-top: 70px; }
   .contacto .rectangulo { margin-top: 0; padding: 30px; }
+}
+
+.d-flex img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: grayscale(20%) brightness(0.9);
+}
+
+.d-flex img:hover {
+  transform: scale(1.2);
+  filter: grayscale(0%) brightness(1.2) drop-shadow(0 0 10px rgba(0, 212, 255, 0.5));
+  cursor: pointer;
+}
+
+/* --- Estilo Hero Minimalista --- */
+.hero-minimalista {
+  background-color: #050f1e;
+  min-height: 100vh;
+  padding: 100px 20px;
+}
+
+.avatar-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 2px solid #007bff;
+  box-shadow: 0 0 30px rgba(0, 123, 255, 0.3);
+  object-fit: cover;
+}
+
+.hero-nombre {
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.resaltado {
+  color: #00d4ff;
+}
+
+.hero-descripcion {
+  font-size: 1.15rem;
+  color: #a0aec0;
+  max-width: 750px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.tech-container {
+  margin-top: 50px;
+}
+
+.tech-titulo-pequeno {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #00d4ff;
+  margin-bottom: 30px;
+  opacity: 0.7;
+}
+
+.tech-iconos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.tech-iconos-grid img {
+  width: 35px;
+  height: auto;
+  filter: grayscale(1) opacity(0.6);
+  transition: all 0.4s ease;
+}
+
+.tech-iconos-grid img:hover {
+  filter: grayscale(0) opacity(1);
+  transform: translateY(-8px);
+}
+
+.logo-ancho {
+  width: 60px !important;
 }

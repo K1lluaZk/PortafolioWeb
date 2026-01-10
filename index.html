@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="author" content="Mario Suero">
   <meta name="description" content="Portafolio web de Mario Suero">
-  <meta name="keywords" content="HTML, CSS, JavaScript, Python, Sql">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mario Suero | Desarrollo Full Stack</title>
+
 
   <link rel="icon" type="image/x-icon" href="assets/icons/portafolio.png">
 
@@ -18,6 +18,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <nav class="navbar navbar-expand-md navbar-light fixed-top shadow-sm">
     <div class="container-fluid">
@@ -43,16 +44,38 @@
     </div>
   </nav>
 
-  <section class="hero d-flex align-items-center">
-    <div class="hero-principal d-flex flex-column justify-content-center align-items-center w-100">
-      <img class="hero-imagen-desarrollador rounded-circle shadow" src="assets/img/FotoTraje.jpg" alt="Foto de Mario Suero">
-      <h1 class="display-4">Hola, soy Mario Suero</h1>
-      <h2 class="lead">Desarrollo sitios web, aplicaciones funcionales y uso bases de datos.</h2>
+<section class="hero-minimalista d-flex align-items-center justify-content-center">
+  <div class="hero-contenido text-center">
+    
+    <div class="avatar-wrapper mb-4">
+      <img class="avatar-img" src="assets/img/FotoTraje2.png" alt="Foto de Mario Suero">
     </div>
-    <div class="hero-inferior w-100 text-center">
-      <img class="hero-inferior-imagen img-fluid" src="assets/img/hero-inferior.svg" alt="Logos">
+
+    <h1 class="hero-nombre">Hola, soy <span class="resaltado">Mario Suero</span></h1>
+    
+    <p class="hero-descripcion mx-auto">
+      Desarrollador Full Stack en formación. Me apasiona crear sitios web funcionales, 
+      aprender nuevas tecnologías y trabajar con bases de datos para dar vida a ideas digitales.
+    </p>
+
+    <div class="tech-container">
+      <p class="tech-titulo-pequeno">Tecnologías que utilizo</p>
+      <div class="tech-iconos-grid">
+        <img src="assets/icons/htmlicon.svg" alt="HTML5">
+        <img src="assets/icons/cssicon.svg" alt="CSS3">
+        <img src="assets/icons/pythonicon.svg" alt="Python">
+        <img src="assets/icons/jsicon.png" alt="JavaScript">
+        <img class="logo-ancho" src="assets/icons/mysqlicon.png" alt="MySQL">
+        <img src="assets/icons/sqlservericon.webp" alt="SQL">
+        <img src="assets/icons/giticon.svg" alt="Git">
+        <img src="assets/icons/githubicon.svg" alt="GitHub">
+        <img src="assets/icons/visualstudiocodeicon.svg" alt="VS Code">
+        <img src="assets/icons/dockericon.png" alt="Docker">
+      </div>
     </div>
-  </section>
+
+  </div>
+</section>
 
   <section id="sobre-mi" class="sobre-mi seccion-oscura d-flex align-items-center">
     <div class="container text-center">
@@ -105,35 +128,93 @@
         </div>
       </div>
     </div>
+
   </section>
 
-  <section id="proyectos" class="proyectos-recientes seccion-clara py-5">
-    <div class="container text-center">
-      <h2 class="seccion-titulo texto-negro">Mis proyectos recientes</h2>
-      <h3 class="seccion-descripcion mb-5">Estos son algunos proyectos que he creado recientemente...</h3>
+<section id="proyectos" class="proyectos-recientes seccion-clara py-5">
+  <div class="container text-center">
+    <h2 class="seccion-titulo texto-negro">Mis proyectos recientes</h2>
+    
+    <h3 class="seccion-descripcion mb-5 mx-auto">Estos son algunos proyectos que he creado recientemente...</h3>
+    
+    <div class="row g-4 proyectos-contenedor">
       
-      <div class="row g-4 proyectos-contenedor">
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="proyecto shadow-sm">
-            <img src="imagenes/proyecto1.png" class="img-fluid" alt="Proyecto 1">
-            <div class="overlay d-flex flex-column align-items-center justify-content-center">
-              <p>Proyecto 1</p>
-              <div class="iconos-contenedor">
-                <a href="https://github.com/" target="_blank"><i class="bi bi-github"></i></a>
-                <a href="#"><i class="bi bi-laptop"></i></a>
-              </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto shadow-sm">
+          <img src="assets/img/ProyectoTicTacToe.PNG" class="img-fluid" alt="Tic Tac Toe Web App">
+          <div class="overlay d-flex flex-column align-items-center justify-content-center">
+            <p>Tic Tac Toe Web App</p>
+            <div class="iconos-contenedor">
+              <a href="https://github.com/K1lluaZk/TicTacToeGame/tree/TicTacToeWebApp" target="_blank"><i class="bi bi-github"></i></a>
+              <a href="https://htictactoe.vercel.app/" target="_blank"><i class="bi bi-laptop"></i></a>
             </div>
           </div>
         </div>
-        </div>
+      </div>
 
-      <div class="mt-5">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto shadow-sm">
+          <img src="assets/img/ProyectoEmotionsMl.PNG" class="img-fluid" alt="EmotionsMl">
+          <div class="overlay d-flex flex-column align-items-center justify-content-center">
+            <p>Emotions Ml</p>
+            <div class="iconos-contenedor">
+              <a href="https://github.com/K1lluaZk/EmotionsML/tree/main" target="_blank"><i class="bi bi-github"></i></a>
+              <a href="https://motivated-art-production.up.railway.app/" target="_blank"><i class="bi bi-laptop"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto shadow-sm">
+          <img src="assets/img/ProyectoJardinBotanico.PNG" class="img-fluid" alt="Identificador De Flores">
+          <div class="overlay d-flex flex-column align-items-center justify-content-center">
+            <p>Proyecto Sobre Jardin Botanico Ml</p>
+            <div class="iconos-contenedor">
+              <a href="https://github.com/AnthonyGzm/Proyecto-Jardin-BotanicoRD" target="_blank"><i class="bi bi-github"></i></a>
+              <a href="https://jardinbotanicoai.netlify.app/" target="_blank"><i class="bi bi-laptop"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto shadow-sm">
+          <img src="assets/img/UniCoreWebApp.jpg" class="img-fluid" alt="UniCoreWebApp">
+          <div class="overlay d-flex flex-column align-items-center justify-content-center">
+            <p>Sistema De Gestion Universitaria</p>
+            <div class="iconos-contenedor">
+              <a href="https://github.com/K1lluaZk/UniCoreWebApp?tab=readme-ov-file" target="_blank"><i class="bi bi-github"></i></a>
+             <!--<a href="#" target="_blank"><i class="bi bi-laptop"></i></a>  -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto shadow-sm">
+          <img src="assets/img/AgendaDePeliculas.png" class="img-fluid" alt="AgendaDePeliculas">
+          <div class="overlay d-flex flex-column align-items-center justify-content-center">
+            <p>Sistema De Agenda De Peliculas</p>
+            <div class="iconos-contenedor">
+              <a href="https://github.com/K1lluaZk/Agenda-De-Peliculas" target="_blank"><i class="bi bi-github"></i></a>
+             <!--<a href="#" target="_blank"><i class="bi bi-laptop"></i></a>  -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    <div class="row mt-5">
+      <div class="col-12 text-center">
         <a href="https://github.com/K1lluaZk?tab=repositories" target="_blank" class="btn btn-info btn-lg">
           Ver más proyectos <i class="bi bi-arrow-right-circle-fill ms-2"></i>
         </a>
       </div>
     </div>
-  </section>
+
+  </div> </section>
 
   <section id="contacto" class="contacto seccion-oscura py-5">
     <div class="container">
@@ -158,7 +239,6 @@
   </section>
   
   <footer class="seccion-oscura py-5 text-center"> 
-    <img class="footer-logo mb-4" src="assets/icons/programador.png" alt="Logo">
     <p class="footer-texto">Aprendo y creo todos los días.<br>Creemos un proyecto juntos.</p>
     <div class="iconos-redes-sociales d-flex justify-content-center gap-3">
       <a href="https://github.com/K1lluaZk" target="_blank"><i class="bi bi-github"></i></a>
