@@ -1,0 +1,249 @@
+/* --- Paleta de Colores y Variables --- */
+:root {
+  --fondo-oscuro: #0a192f;
+  --fondo-secundario: #112240;
+  --azul-acento: #007bff;
+  --azul-hover: #00d4ff;
+  --texto-principal: #e6f1ff;
+  --texto-secundario: #8892b0;
+}
+
+/* --- Estilos Generales --- */
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: var(--fondo-oscuro);
+  color: var(--texto-principal);
+  overflow-x: hidden;
+}
+
+section {
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1, h2, .seccion-titulo {
+  font-family: 'Rubik Dirt', cursive;
+  letter-spacing: 2px;
+}
+
+/* --- Barra de Navegación --- */
+.navbar {
+  padding: 1rem 2rem;
+  background-color: rgba(10, 25, 47, 0.95) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+}
+
+.nav-link {
+  color: var(--texto-principal) !important;
+  font-weight: 500;
+  transition: 0.3s;
+  margin: 0 10px;
+}
+
+.nav-link:hover {
+  color: var(--azul-hover) !important;
+  transform: translateY(-2px);
+}
+
+/* --- Sección Hero --- */
+.hero {
+  background: radial-gradient(circle at center, #112240 0%, #0a192f 100%);
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.hero-imagen-desarrollador {
+  width: 220px;
+  height: 220px;
+  border: 4px solid var(--azul-acento);
+  box-shadow: 0 0 25px rgba(0, 123, 255, 0.4);
+  transition: 0.5s;
+}
+
+.hero-imagen-desarrollador:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 35px var(--azul-acento);
+}
+
+/* --- Secciones y Contenedores --- */
+.seccion-oscura {
+  background-color: var(--fondo-oscuro);
+}
+
+.seccion-clara {
+  background-color: var(--fondo-secundario);
+  color: var(--texto-principal);
+}
+
+.seccion-descripcion {
+  color: var(--texto-secundario);
+  max-width: 700px;
+  text-align: center;
+}
+
+/* --- Tarjetas de Experiencia (Columnas) --- */
+.experiencia .columna {
+  background: var(--fondo-oscuro);
+  border: 1px solid rgba(0, 212, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px 20px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.experiencia .columna:hover {
+  transform: translateY(-15px);
+  border-color: var(--azul-acento);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.experiencia i {
+  font-size: 3rem;
+  color: var(--azul-hover);
+  margin-bottom: 20px;
+}
+
+.badge {
+  background-color: rgba(0, 123, 255, 0.1) !important;
+  color: var(--azul-hover) !important;
+  border: 1px solid var(--azul-acento);
+  padding: 8px 15px;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+/* --- Galería de Proyectos --- */
+.proyecto {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.proyecto img {
+  transition: 0.5s ease;
+  filter: grayscale(40%);
+}
+
+.proyecto:hover img {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+  opacity: 0.3;
+}
+
+.overlay {
+  background: rgba(10, 25, 47, 0.85);
+  width: 100%;
+  height: 100%;
+}
+
+.overlay i {
+  color: var(--azul-hover);
+  font-size: 2.5rem;
+  transition: 0.3s;
+}
+
+.overlay i:hover {
+  color: white;
+  transform: scale(1.2);
+}
+
+/* --- Sección Contacto (El Rectángulo Azul) --- */
+.contacto .rectangulo {
+  background: linear-gradient(135deg, #007bff 0%, #00d4ff 100%);
+  border: none;
+  border-radius: 20px;
+  padding: 60px;
+  margin-top: -100px; /* Efecto flotante */
+}
+
+.btn-contacto-custom {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.4s;
+}
+
+.btn-contacto-custom:hover {
+  background: white;
+  color: var(--azul-acento);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* --- Pie de Página (Rediseño Moderno) --- */
+footer {
+  padding: 80px 0 40px 0;
+  background: linear-gradient(to bottom, var(--fondo-oscuro), #050c16);
+  border-top: 1px solid rgba(0, 212, 255, 0.05);
+  position: relative;
+}
+
+.footer-logo {
+  filter: drop-shadow(0 0 10px rgba(0, 123, 255, 0.3));
+  transition: transform 0.5s ease;
+}
+
+.footer-logo:hover {
+  transform: rotate(360px) scale(1.1);
+}
+
+.footer-texto {
+  color: var(--texto-principal);
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+/* Contenedor de iconos con efecto de tarjeta flotante */
+.iconos-redes-sociales a {
+  background: rgba(17, 34, 64, 0.5); /* Fondo semitransparente */
+  color: var(--azul-hover);
+  width: 55px;
+  height: 55px;
+  margin: 0 12px;
+  text-decoration: none;
+  border-radius: 12px; /* Cuadrado redondeado moderno */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 212, 255, 0.1);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Efecto Hover: Resplandor de Neón */
+.iconos-redes-sociales a:hover {
+  background: var(--azul-acento);
+  color: white !important;
+  transform: translateY(-10px) scale(1.1);
+  border-color: var(--azul-hover);
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.6), 
+              0 0 40px rgba(0, 212, 255, 0.2);
+}
+
+.iconos-redes-sociales i {
+  font-size: 1.6rem;
+  transition: transform 0.3s ease;
+}
+
+.iconos-redes-sociales a:hover i {
+  transform: rotate(-10deg);
+}
+
+.derechos-de-autor {
+  margin-top: 40px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.85rem;
+  color: var(--texto-secundario);
+  opacity: 0.6;
+}
+/* --- Media Queries --- */
+@media (max-width: 768px) {
+  body { padding-top: 70px; }
+  .contacto .rectangulo { margin-top: 0; padding: 30px; }
+}

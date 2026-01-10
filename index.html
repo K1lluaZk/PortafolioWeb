@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Mario Suero">
+  <meta name="description" content="Portafolio web de Mario Suero">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Python, Sql">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mario Suero | Desarrollo Full Stack</title>
+
+  <link rel="icon" type="image/x-icon" href="assets/icons/portafolio.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-light fixed-top shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="assets/icons/programador.png" width="50" alt="Logo de la página web">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-toggler">
+        <ul class="navbar-nav ms-auto d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#proyectos">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero d-flex align-items-center">
+    <div class="hero-principal d-flex flex-column justify-content-center align-items-center w-100">
+      <img class="hero-imagen-desarrollador rounded-circle shadow" src="assets/img/FotoTraje.jpg" alt="Foto de Mario Suero">
+      <h1 class="display-4">Hola, soy Mario Suero</h1>
+      <h2 class="lead">Desarrollo sitios web, aplicaciones funcionales y uso de bases de datos.</h2>
+    </div>
+    <div class="hero-inferior w-100 text-center">
+      <img class="hero-inferior-imagen img-fluid" src="assets/img/hero-inferior.svg" alt="Monitor, laptop y logos">
+    </div>
+  </section>
+
+  <section id="sobre-mi" class="sobre-mi seccion-oscura d-flex align-items-center">
+    <div class="container text-center">
+      <h2 class="seccion-titulo">Conoce a Mario Suero</h2>
+      <p class="seccion-texto mx-auto" style="max-width: 800px;">¡Hola! Soy Mario Suero, un aspirante a desarrollador full stack con pasión por la programación, la resolución de problemas y el aprendizaje continuo.</p>
+    </div>
+  </section>
+
+  <section class="experiencia seccion-clara">
+    <div class="container text-center">
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <div class="columna h-100 p-4 shadow-sm">
+            <i class="bi bi-laptop mb-3"></i>
+            <p class="experiencia-titulo">Frontend</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet, odio eget fringilla scelerisque.</p>
+            <div class="badges-contenedor">
+              <span class="badge rounded-pill text-bg-primary">HTML</span>
+              <span class="badge rounded-pill text-bg-primary">CSS</span>
+              <span class="badge rounded-pill text-bg-primary">JavaScript</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="columna h-100 p-4 shadow-sm">
+            <i class="bi bi-server mb-3"></i>
+            <p class="experiencia-titulo">Backend</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet, odio eget fringilla scelerisque.</p>
+            <div class="badges-contenedor">
+              <span class="badge rounded-pill text-bg-primary">Python</span>
+              <span class="badge rounded-pill text-bg-primary">Node.js</span>
+              <span class="badge rounded-pill text-bg-primary">APIs</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="columna h-100 p-4 shadow-sm">
+            <i class="bi bi-database mb-3"></i>
+            <p class="experiencia-titulo">Bases De Datos</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet, odio eget fringilla scelerisque.</p>
+            <div class="badges-contenedor">
+              <span class="badge rounded-pill text-bg-primary">SQL</span>
+              <span class="badge rounded-pill text-bg-primary">PostgreSQL</span>
+              <span class="badge rounded-pill text-bg-primary">MongoDB</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="proyectos" class="proyectos-recientes seccion-clara py-5">
+    <div class="container text-center">
+      <h2 class="seccion-titulo texto-negro">Mis proyectos recientes</h2>
+      <h3 class="seccion-descripcion mb-5">Estos son algunos proyectos que he creado recientemente...</h3>
+      
+      <div class="row g-4 proyectos-contenedor">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto shadow-sm">
+            <img src="imagenes/proyecto1.png" class="img-fluid" alt="Proyecto 1">
+            <div class="overlay d-flex flex-column align-items-center justify-content-center">
+              <p>Proyecto 1</p>
+              <div class="iconos-contenedor">
+                <a href="https://github.com/" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="#"><i class="bi bi-laptop"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+      <div class="mt-5">
+        <a href="https://github.com/" target="_blank" class="btn btn-info btn-lg">
+          Ver más proyectos <i class="bi bi-arrow-right-circle-fill ms-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contacto seccion-oscura py-5">
+    <div class="container">
+      <div class="rectangulo p-5 shadow">
+        <div class="row align-items-center text-center">
+          <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+            <h2 class="seccion-titulo m-0">¡Hablemos!</h2>
+          </div>
+          <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+            <p class="descripcion m-0">Contáctame para iniciar tu proyecto de desarrollo web y haré que tu visión se vuelva realidad.</p>
+          </div>
+          <div class="col-12 col-lg-4">
+            <a href="mailto:mario.suerodejesus@gmail.com">
+              <button type="button" class="btn-contacto-custom">  
+                Contacto <i class="bi bi-envelope-check-fill ms-2"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="seccion-oscura py-5 text-center"> 
+    <img class="footer-logo mb-4" src="assets/icons/programador.png" alt="Logo">
+    <p class="footer-texto">Aprendo y creo todos los días.<br>Creemos un proyecto juntos.</p>
+    <div class="iconos-redes-sociales d-flex justify-content-center gap-3">
+      <a href="https://github.com/K1lluaZk" target="_blank"><i class="bi bi-github"></i></a>
+      <a href="https://www.linkedin.com/in/mario-de-jesus-suero-de-leon-4431602a8/" target="_blank"><i class="bi bi-linkedin"></i></a>
+      <a href="https://www.instagram.com/m_suero_999/" target="_blank"><i class="bi bi-instagram"></i></a>
+      <a href="mailto:mario.suerodejesus@gmail.com"><i class="bi bi-envelope"></i></a>
+    </div>
+    <div class="derechos-de-autor mt-4">Creado por Mario Suero (2026) &#169;</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
