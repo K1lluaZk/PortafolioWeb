@@ -66,6 +66,14 @@ cd portafolio
 * **Estado:** En constante actualización.
 * **Próximas mejoras:** Implementación de un formulario de contacto funcional y optimización de SEO.
 
+---
+
+### Imagenes del proyecto
+
+<img width="1897" height="956" alt="image" src="https://github.com/user-attachments/assets/4bb18083-d0d5-4db4-b936-6b99818ed0d3" />
+<img width="1909" height="947" alt="image" src="https://github.com/user-attachments/assets/9640fb2f-ea55-4219-b2cc-1a404e579fef" />
+<img width="1890" height="952" alt="image" src="https://github.com/user-attachments/assets/95308f35-dae1-4d7b-8ab7-8be6bcb76607" />
+
 ### ✍️ Autor
 
 **Mario Suero (K1lluaZk)** *Desarrollador de Software Junior apasionado por crear soluciones eficientes y visualmente atractivas.*
