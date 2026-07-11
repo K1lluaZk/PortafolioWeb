@@ -1,0 +1,25 @@
+{
+  "name": "portafolioweb",
+  "version": "1.0.0",
+  "description": "Portafolio profesional de Mario Suero — Desarrollador de Software",
+  "scripts": {
+    "dev": "tailwindcss -i ./css/input.css -o ./css/styles.css --watch",
+    "build": "tailwindcss -i ./css/input.css -o ./css/styles.css --minify",
+    "serve": "npx live-server --port=3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/K1lluaZk/PortafolioWeb.git"
+  },
+  "keywords": ["portfolio", "developer", "tailwindcss"],
+  "author": "Mario Suero",
+  "license": "ISC",
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17"
+  }
+}
