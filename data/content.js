@@ -232,7 +232,7 @@ export const education = [
       'Buenas prácticas en desarrollo web y control de versiones con Git.',
     ],
   },
-{
+  {
     title: 'Curso de Fundamentos De Python',
     company: 'Cisco Networking Academy',
     period: '2025',
