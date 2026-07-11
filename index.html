@@ -57,14 +57,14 @@
     <div class="ambient-glow-secondary"></div>
   </div>
 
-  <!-- Header / Navigation -->
   <header id="header" class="fixed top-0 left-0 right-0 z-40 transition-all duration-[400ms] border-b border-transparent">
     <nav id="nav" class="section-container flex items-center justify-between h-16" aria-label="Navegación principal">
       <a href="#hero" class="font-manrope text-sm font-semibold text-white tracking-tight" aria-label="Inicio">
         MS<span class="text-gray-500">.</span>
       </a>
 
-      <ul class="hidden md:flex items-center gap-8" role="list">
+      <!-- Menu Navegation Dekstop -->
+      <ul class="hidden md:flex items-center gap-8 mx-auto" role="list">
         <li><a href="#about" class="nav-link">Sobre mí</a></li>
         <li><a href="#technologies" class="nav-link">Tecnologías</a></li>
         <li><a href="#projects" class="nav-link">Proyectos</a></li>
@@ -86,7 +86,6 @@
     </nav>
   </header>
 
-  <!-- Mobile Menu -->
   <div id="mobile-menu" class="mobile-menu md:hidden" aria-hidden="true" role="dialog" aria-label="Menú de navegación">
     <div class="flex items-center justify-between p-6 border-b border-white/5">
       <span class="font-manrope text-sm font-semibold text-white">MS.</span>
@@ -137,7 +136,6 @@
         </div>
       </div>
 
-      <!-- Scroll Indicator -->
       <a href="#about" class="scroll-indicator absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gray-500 hover:text-gray-400 transition-colors duration-300" aria-label="Desplazarse hacia abajo">
         <span class="text-xs uppercase tracking-widest">Scroll</span>
         <svg class="w-5 h-5 animate-scroll-hint" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
@@ -146,7 +144,6 @@
       </a>
     </section>
 
-    <!-- About -->
     <section id="about" class="section-padding" aria-labelledby="about-title">
       <div class="section-container">
         <div class="mb-16 reveal">
@@ -162,31 +159,35 @@
             <p class="text-gray-400 leading-relaxed text-base mt-4">
               Cada proyecto es una oportunidad para mejorar, explorar nuevas tecnologías y construir experiencias que realmente importen.
             </p>
+            <p class="text-gray-400 leading-relaxed text-base mt-4"> 
+              La destruccion tambien es una forma de crear, y la creacion es una forma de destruir.
+            </p>
+
+
           </div>
           <div id="about-values" class="grid sm:grid-cols-2 gap-4"></div>
         </div>
       </div>
     </section>
 
-    <!-- Technologies -->
     <section id="technologies" class="section-padding" aria-labelledby="tech-title">
       <div class="section-container">
         <div class="mb-16 reveal">
           <p class="section-subtitle mb-3">Stack</p>
           <h2 id="tech-title" class="section-title">Tecnologías</h2>
           <p class="text-gray-400 mt-4 max-w-xl">
-            Herramientas y tecnologías que utilizo para construir aplicaciones modernas.
+            Herramientas y tecnologías que utilizo para construir mis aplicaciones modernas.
           </p>
         </div>
         <div id="tech-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
       </div>
     </section>
 
-    <!-- Projects -->
+    <!-- Proyectos -->
     <section id="projects" class="section-padding" aria-labelledby="projects-title">
       <div class="section-container">
         <div class="mb-16 reveal">
-          <p class="section-subtitle mb-3">Trabajo</p>
+          <p class="section-subtitle mb-3">Trabajos</p>
           <h2 id="projects-title" class="section-title">Proyectos</h2>
           <p class="text-gray-400 mt-4 max-w-xl">
             Una selección de proyectos que reflejan mi enfoque en calidad y diseño.
@@ -196,7 +197,7 @@
       </div>
     </section>
 
-    <!-- Experience -->
+    <!-- Experiencia -->
     <section id="experience" class="section-padding" aria-labelledby="exp-title">
       <div class="section-container">
         <div class="mb-16 reveal">
@@ -207,7 +208,7 @@
       </div>
     </section>
 
-    <!-- Education -->
+    <!-- Educación -->
     <section id="education" class="section-padding" aria-labelledby="edu-title">
       <div class="section-container">
         <div class="mb-16 reveal">
@@ -218,7 +219,7 @@
       </div>
     </section>
 
-    <!-- Certifications -->
+    <!-- Certificaciones -->
     <section id="certifications" class="section-padding" aria-labelledby="cert-title">
       <div class="section-container">
         <div class="mb-16 reveal">
@@ -229,7 +230,7 @@
       </div>
     </section>
 
-    <!-- Contact -->
+    <!-- Contacto -->
     <section id="contact" class="section-padding" aria-labelledby="contact-title">
       <div class="section-container">
         <div class="mb-16 reveal">
@@ -241,7 +242,6 @@
         </div>
 
         <div class="grid lg:grid-cols-2 gap-12 lg:gap-16">
-          <!-- Form -->
           <form id="contact-form" class="reveal space-y-5" novalidate>
             <div>
               <label for="name" class="form-label">Nombre</label>
@@ -314,7 +314,6 @@
 
   </main>
 
-  <!-- Footer -->
   <footer class="relative z-10 border-t border-white/5 py-8">
     <div class="section-container flex flex-col sm:flex-row items-center justify-between gap-4">
       <p class="text-sm text-gray-500">

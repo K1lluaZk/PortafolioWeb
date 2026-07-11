@@ -50,32 +50,78 @@ function createProjectsSection() {
     .map(
       (project, i) => `
     <article class="card-surface overflow-hidden reveal group" data-delay="${(i % 2) * 100}">
-      <div class="aspect-video overflow-hidden bg-surface-2">
-        <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-white/[0.02] to-white/[0.05] transition-transform duration-500 group-hover:scale-[1.03]">
-          <span class="text-gray-600 text-sm font-manrope">${project.title}</span>
+      
+      <div class="aspect-video overflow-hidden bg-surface-2 relative">
+        <img
+          src="${project.image}"
+          alt="${project.title}"
+          loading="lazy"
+          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+        />
+
+        <!-- Degradado para mantener la estética -->
+        <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent"></div>
+
+        <!-- Título sobre la imagen -->
+        <div class="absolute bottom-4 left-4">
+          <span class="text-white font-manrope text-lg font-medium drop-shadow-lg">
+            ${project.title}
+          </span>
         </div>
       </div>
+
       <div class="p-6">
         <div class="flex items-start justify-between gap-4 mb-3">
           <div>
             <span class="text-xs text-gray-500">${project.year}</span>
-            <h3 class="font-manrope text-xl font-medium text-white mt-1">${project.title}</h3>
+            <h3 class="font-manrope text-xl font-medium text-white mt-1">
+              ${project.title}
+            </h3>
           </div>
-          <span class="status-badge ${project.status} shrink-0">${statusLabels[project.status]}</span>
+
+          <span class="status-badge ${project.status} shrink-0">
+            ${statusLabels[project.status]}
+          </span>
         </div>
-        <p class="text-gray-400 text-sm leading-relaxed mb-4">${project.description}</p>
+
+        <p class="text-gray-400 text-sm leading-relaxed mb-4">
+          ${project.description}
+        </p>
+
         <div class="flex flex-wrap gap-2 mb-5">
-          ${project.technologies.map((t) => `<span class="tag">${t}</span>`).join('')}
+          ${project.technologies
+            .map((t) => `<span class="tag">${t}</span>`)
+            .join('')}
         </div>
+
         <div class="flex items-center gap-4 text-sm">
-          <a href="${project.github}" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors duration-300" aria-label="Ver ${project.title} en GitHub">GitHub</a>
+          <a
+            href="${project.github}"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-gray-400 hover:text-white transition-colors duration-300"
+            aria-label="Ver ${project.title} en GitHub"
+          >
+            GitHub
+          </a>
+
           ${
             project.demo
-              ? `<a href="${project.demo}" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors duration-300" aria-label="Ver demo de ${project.title}">Demo</a>`
+              ? `
+            <a
+              href="${project.demo}"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-gray-400 hover:text-blue-500 transition-colors duration-300"
+              aria-label="Ver demo de ${project.title}"
+            >
+              Ver Demo
+            </a>`
               : '<span class="text-gray-600">Demo próximamente</span>'
           }
         </div>
       </div>
+
     </article>
   `
     )

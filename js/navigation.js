@@ -24,19 +24,22 @@ export function initNavigation() {
     lastScroll = currentScroll;
   });
 
-  const sectionObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const id = entry.target.id;
-          updateActiveLink(id);
-        }
-      });
-    },
-    { threshold: 0.3, rootMargin: '-80px 0px -50% 0px' }
-  );
+function updateActiveSection() {
+  const scrollPosition = window.scrollY + header.offsetHeight + 150;
 
-  sections.forEach((section) => sectionObserver.observe(section));
+  let currentSection = sections[0]?.id;
+
+  sections.forEach((section) => {
+    if (scrollPosition >= section.offsetTop) {
+      currentSection = section.id;
+    }
+  });
+
+  updateActiveLink(currentSection);
+}
+
+window.addEventListener('scroll', updateActiveSection);
+updateActiveSection();
 
   function updateActiveLink(activeId) {
     document.querySelectorAll('.nav-link').forEach((link) => {
