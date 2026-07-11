@@ -1,0 +1,16 @@
+{
+  "name": "Mario Suero — Portafolio",
+  "short_name": "Mario Suero",
+  "description": "Portafolio profesional de Mario Suero, Desarrollador de Software",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#050505",
+  "icons": [
+    {
+      "src": "assets/icons/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
