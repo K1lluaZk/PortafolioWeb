@@ -52,22 +52,28 @@ function createProjectsSection() {
     <article class="card-surface overflow-hidden reveal group" data-delay="${(i % 2) * 100}">
       
       <div class="aspect-video overflow-hidden bg-surface-2 relative">
-        <img
-          src="${project.image}"
-          alt="${project.title}"
-          loading="lazy"
-          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-        />
+        <a
+          href="${project.demo || project.github}"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="block w-full h-full"
+        > 
+          <img
+            src="${project.image}"
+            alt="${project.title}"
+            loading="lazy"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+          />
 
-        <!-- Degradado para mantener la estética -->
         <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent"></div>
 
         <!-- Título sobre la imagen -->
         <div class="absolute bottom-4 left-4">
           <span class="text-white font-manrope text-lg font-medium drop-shadow-lg">
             ${project.title}
-          </span>
+          </span> 
         </div>
+        </a>   
       </div>
 
       <div class="p-6">
@@ -106,19 +112,14 @@ function createProjectsSection() {
           </a>
 
           ${
-            project.demo
-              ? `
-            <a
-              href="${project.demo}"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-gray-400 hover:text-blue-500 transition-colors duration-300"
-              aria-label="Ver demo de ${project.title}"
-            >
-              Ver Demo
-            </a>`
-              : '<span class="text-gray-600">Demo próximamente</span>'
-          }
+              !project.demo
+                ? `
+                <span class="text-gray-600">
+                  Demo próximamente
+                </span>
+                `
+                : ''
+            }
         </div>
       </div>
 
