@@ -101,6 +101,7 @@ export const technologies = [
       { name: 'Flutter', icon: 'flutter' },
       { name: 'NPM', icon: 'npm' },
       { name: 'phpMyAdmin', icon: 'phpmyadmin' },
+      { name: 'Selenium', icon: 'selenium' },
     ],
   },
 ];
@@ -151,7 +152,7 @@ export const projects = [
     technologies: ['HTML5', 'Tailwind CSS', 'JavaScript', 'Node.js', 'Express', 'MongoDB',],
     github: 'https://github.com/K1lluaZk/Balanceo',
     demo: null,
-    status: 'live',
+    status: 'development',
     year: '2026',
   },
     {
