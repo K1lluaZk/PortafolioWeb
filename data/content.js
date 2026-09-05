@@ -167,6 +167,18 @@ export const projects = [
     status: 'live',
     year: '2025',
   },
+  {
+    id: 6,
+    title: 'FateChat',
+    description:
+      'Una aplicación de mensajería instantánea moderna y segura, construida con tecnologías web contemporáneas.',
+    image: 'assets/images/projects/fatechat.jpg',
+    technologies: ['HTML5', 'CSS', 'JavaScript', 'TypeScript','InsForge'],
+    github: 'https://github.com/DogitoMB2006/fatechat',
+    demo: 'https://www.fatechat.net/',
+    status: 'development',
+    year: '2026',
+  }
 ];
 
 export const experience = [
