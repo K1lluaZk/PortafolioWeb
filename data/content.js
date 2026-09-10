@@ -145,13 +145,13 @@ export const projects = [
   },
   {
     id: 4,
-    title: 'Balanceo',
+    title: 'Huru',
     description:
-      'Una aplicación moderna para la gestión de ingresos y gastos con arquitectura robusta y filtros avanzados.',
-    image: 'assets/images/projects/balanceo.jpg',
-    technologies: ['HTML5', 'Tailwind CSS', 'JavaScript', 'Node.js', 'Express', 'MongoDB',],
-    github: 'https://github.com/K1lluaZk/Balanceo',
-    demo: null,
+      'Una Tienda online (e-commerce) full-stack que permite gestionar productos, usuarios, carrito de compras y pedidos, con un panel administrativo.',
+    image: 'assets/images/projects/huru.jpg',
+    technologies: ['React', 'Tailwind CSS', 'TypeScript', 'Node.js', 'Express', 'PostgreSQL', 'Prisma ORM', 'JWT',],
+    github: 'https://github.com/K1lluaZk/Huru',
+    demo: 'https://huru-4j1oaxojw-k1lluazks-projects.vercel.app/',
     status: 'development',
     year: '2026',
   },
@@ -173,7 +173,7 @@ export const projects = [
     description:
       'Una aplicación de mensajería instantánea moderna y segura, construida con tecnologías web contemporáneas.',
     image: 'assets/images/projects/fatechat.jpg',
-    technologies: ['HTML5', 'CSS', 'JavaScript', 'TypeScript','InsForge'],
+    technologies: ['HTML5', 'CSS', 'JavaScript', 'TypeScript','InsForge', 'Tailwind CSS',],
     github: 'https://github.com/DogitoMB2006/fatechat',
     demo: 'https://www.fatechat.net/',
     status: 'development',
