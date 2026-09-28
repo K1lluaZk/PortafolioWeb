@@ -149,7 +149,7 @@ export const projects = [
     description:
       'Una Tienda online (e-commerce) full-stack que permite gestionar productos, usuarios, carrito de compras y pedidos, con un panel administrativo.',
     image: 'assets/images/projects/huru.jpg',
-    technologies: ['React', 'Tailwind CSS', 'TypeScript', 'Node.js', 'Express', 'PostgreSQL', 'Prisma ORM', 'JWT',],
+    technologies: ['React', 'Tailwind CSS', 'TypeScript', 'Node.js', 'Express', 'PostgreSQL', 'Prisma ORM', 'Neon',],
     github: 'https://github.com/K1lluaZk/Huru',
     demo: 'https://huru-4j1oaxojw-k1lluazks-projects.vercel.app/',
     status: 'development',
