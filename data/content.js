@@ -176,7 +176,7 @@ export const projects = [
     technologies: ['HTML5', 'CSS', 'JavaScript', 'TypeScript','InsForge', 'Tailwind CSS',],
     github: 'https://github.com/DogitoMB2006/fatechat',
     demo: 'https://www.fatechat.net/',
-    status: 'development',
+    status: 'live',
     year: '2026',
   }
 ];
