@@ -128,7 +128,7 @@ export const projects = [
     technologies: ['Node.js', 'Express', 'Firebase', 'Firestore', 'JWT', 'Tailwind CSS', 'EJS'],
     github: 'https://github.com/K1lluaZk/NodeStock',
     demo: 'https://nodestock-bile.onrender.com/',
-    status: 'development',
+    status: 'live',
     year: '2026',
   },
   {
