@@ -77,13 +77,15 @@ export const technologies = [
     ],
   },
   {
-    category: 'Cloud',
+    category: 'Servicios y Plataformas / Cloud',
     items: [
       { name: 'Azure', icon: 'microsoftazure' },
       { name: 'AWS', icon: 'amazonaws' },
       { name: 'Vercel', icon: 'vercel' },
       { name: 'Supabase', icon: 'supabase' },
       { name: 'Firebase', icon: 'firebase' },
+      { name: 'AzureDevops', icon: 'azuredevops' },
+      { name: 'Jira', icon: 'jira' }
     ],
   },
   {
@@ -94,18 +96,14 @@ export const technologies = [
       { name: 'VS Code', icon: 'visualstudiocode' },
       { name: 'Docker', icon: 'docker' },
       { name: 'Postman', icon: 'postman' },
-      { name: 'Jira', icon: 'jira' },
       { name: 'Cursor', icon: 'openbadges' },
-      { name: 'Supabase', icon: 'supabase' },
-      { name: 'Firebase', icon: 'firebase' },
       { name: 'Flutter', icon: 'flutter' },
       { name: 'NPM', icon: 'npm' },
       { name: 'phpMyAdmin', icon: 'phpmyadmin' },
-      { name: 'Selenium', icon: 'selenium' },
-      { name: 'AzureDevops', icon: 'azuredevops' },
+      { name: 'Selenium', icon: 'selenium' }
     ],
   },
-];
+]
 
 export const projects = [
   {
