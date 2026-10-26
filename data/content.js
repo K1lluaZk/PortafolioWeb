@@ -36,7 +36,7 @@ export const about = {
     },
     {
       icon: 'team',
-      title: 'Trabajo en equipo',
+      title: 'Trabajo en equipo (CI/CD)',
       description: 'Colaboración efectiva bajo metodologías ágiles.',
     },
   ],
