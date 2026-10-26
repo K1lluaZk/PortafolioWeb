@@ -102,7 +102,7 @@ export const technologies = [
       { name: 'NPM', icon: 'npm' },
       { name: 'phpMyAdmin', icon: 'phpmyadmin' },
       { name: 'Selenium', icon: 'selenium' },
-      { name: 'AzureDevops', icon: 'AzureDevops' },
+      { name: 'AzureDevops', icon: 'azuredevops' },
     ],
   },
 ];
