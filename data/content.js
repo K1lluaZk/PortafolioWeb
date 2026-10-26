@@ -85,7 +85,7 @@ export const technologies = [
       { name: 'Supabase', icon: 'supabase' },
       { name: 'Firebase', icon: 'firebase' },
       { name: 'AzureDevops', icon: 'azuredevops' },
-      { name: 'Jira', icon: 'jira' }
+      { name: 'Jira', icon: 'jira' },
     ],
   },
   {
@@ -100,7 +100,8 @@ export const technologies = [
       { name: 'Flutter', icon: 'flutter' },
       { name: 'NPM', icon: 'npm' },
       { name: 'phpMyAdmin', icon: 'phpmyadmin' },
-      { name: 'Selenium', icon: 'selenium' }
+      { name: 'Selenium', icon: 'selenium' },
+      { name: 'Android Studio', icon: 'androidstudio' },
     ],
   },
 ]
