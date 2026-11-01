@@ -185,7 +185,7 @@ export const projects = [
     description:
       'Una aplicación web que utiliza inteligencia artificial para humanizar textos, mejorando la legibilidad y el estilo de escritura.',
     image: 'assets/images/projects/HumanizadorIA.jpg',
-    technologies: ['HTML5', 'CSS', 'JavaScript', 'TypeScript','InsForge', 'Tailwind CSS',],
+    technologies: ['HTML5', '.Net', 'C#', 'Tailwind CSS',],
     github: 'https://github.com/K1lluaZk/HumanizadorIA',
     demo: 'https://humanizadoria.onrender.com/',
     status: 'development',
