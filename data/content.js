@@ -116,7 +116,7 @@ export const projects = [
     technologies: ['HTML', 'Tailwind CSS', 'JavaScript', 'Node.js', 'Express', 'SQLite', 'Socket.io', 'Turso', 'Docker'],
     github: 'https://github.com/K1lluaZk/HunterChat',
     demo: 'https://hunterchat-production.up.railway.app/',
-    status: 'live', 'desarrollo web',
+    status: 'live',
     year: '2026',
   },
   {
