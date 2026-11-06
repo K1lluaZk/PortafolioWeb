@@ -125,7 +125,7 @@ export const projects = [
     description:
       'Una solución moderna para la administración de inventarios, control de movimientos, gestión de categorías y usuarios con autenticación segura basada en JWT.',
     image: 'assets/images/projects/nodestock.jpg',
-    technologies: ['Node.js', 'Express', 'Firebase', 'Firestore', 'JWT', 'Tailwind CSS', 'EJS'],
+    technologies: ['Node.js', 'Express', 'Firebase', 'Firestore', 'JWT', 'Tailwind CSS', 'EJS', 'MVC'],
     github: 'https://github.com/K1lluaZk/NodeStock',
     demo: 'https://nodestock-bile.onrender.com/',
     status: 'live',
@@ -137,7 +137,7 @@ export const projects = [
     description:
       'Una aplicación moderna, intuitiva y completamente offline diseñada para ayudarte a administrar tus ingresos, gastos y recordatorios financieros de forma sencilla y eficiente.',
     image: 'assets/images/projects/fluxo.jpg',
-    technologies: ['Flutter', 'Dart', 'Hive', 'Provider', 'Material 3', 'Android'],
+    technologies: ['Desarrollo Movil', 'Flutter', 'Dart', 'Hive', 'Provider', 'Material 3', 'Android Studio'],
     github: 'https://github.com/K1lluaZk/Fluxo',
     demo: 'https://github.com/K1lluaZk/Fluxo/releases',
     status: 'development',
@@ -185,7 +185,7 @@ export const projects = [
     description:
       'Una aplicación web que utiliza inteligencia artificial para humanizar textos, mejorando la legibilidad y el estilo de escritura.',
     image: 'assets/images/projects/HumanizadorIA.jpg',
-    technologies: ['HTML5', '.Net', 'C#', 'Tailwind CSS', 'Docker'],
+    technologies: ['HTML5', '.NET', 'C#', 'Tailwind CSS', 'Docker', 'Arquitectura Limpia'],
     github: 'https://github.com/K1lluaZk/HumanizadorIA',
     demo: 'https://humanizadoria.onrender.com/',
     status: 'development',
