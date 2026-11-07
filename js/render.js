@@ -7,6 +7,7 @@ import {
   about,
   profile,
   statusLabels,
+  projectTypes,
 } from '../data/content.js';
 
 function getTechIconUrl(icon) {
@@ -85,9 +86,12 @@ function createProjectsSection() {
             </h3>
           </div>
 
-          <span class="status-badge ${project.status} shrink-0">
-            ${statusLabels[project.status]}
-          </span>
+          <div class="flex flex-col items-end gap-2 shrink-0">
+            <span class="tag">${projectTypes[project.type] || 'Aplicación web'}</span>
+            <span class="status-badge ${project.status}">
+              ${statusLabels[project.status]}
+            </span>
+          </div>
         </div>
 
         <p class="text-gray-400 text-sm leading-relaxed mb-4">

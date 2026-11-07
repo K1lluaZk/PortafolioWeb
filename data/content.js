@@ -110,6 +110,12 @@ export const technologies = [
   },
 ]
 
+export const projectTypes = {
+  web: 'Aplicación web',
+  mobile: 'Aplicación móvil',
+  desktop: 'Desktop',
+};
+
 export const projects = [
   {
     id: 1,
@@ -121,6 +127,7 @@ export const projects = [
     github: 'https://github.com/K1lluaZk/HunterChat',
     demo: 'https://hunterchat-production.up.railway.app/',
     status: 'live',
+    type: 'web',
     year: '2026',
   },
   {
@@ -133,6 +140,7 @@ export const projects = [
     github: 'https://github.com/K1lluaZk/NodeStock',
     demo: 'https://nodestock-bile.onrender.com/',
     status: 'live',
+    type: 'web',
     year: '2026',
   },
   {
@@ -145,6 +153,7 @@ export const projects = [
     github: 'https://github.com/K1lluaZk/Fluxo',
     demo: 'https://github.com/K1lluaZk/Fluxo/releases',
     status: 'development',
+    type: 'mobile',
     year: '2026',
   },
   {
@@ -157,6 +166,7 @@ export const projects = [
     github: 'https://github.com/K1lluaZk/Huru',
     demo: 'https://huru-4j1oaxojw-k1lluazks-projects.vercel.app/',
     status: 'development',
+    type: 'web',
     year: '2026',
   },
     {
@@ -169,6 +179,7 @@ export const projects = [
     github: 'https://github.com/K1lluaZk/TicTacToeGame/tree/TicTacToeWebApp',
     demo: 'https://htictactoe.vercel.app/',
     status: 'live',
+    type: 'web',
     year: '2025',
   },
   {
@@ -181,6 +192,7 @@ export const projects = [
     github: 'https://github.com/DogitoMB2006/fatechat',
     demo: 'https://www.fatechat.net/',
     status: 'live',
+    type: 'web',
     year: '2026',
   },
   {
@@ -193,6 +205,7 @@ export const projects = [
     github: 'https://github.com/K1lluaZk/HumanizadorIA',
     demo: 'https://humanizadoria.onrender.com/',
     status: 'development',
+    type: 'web',
     year: '2026',
   }
 ];
