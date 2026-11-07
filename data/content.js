@@ -266,6 +266,18 @@ export const education = [
   ],
 },
 {
+  title: 'Fundamentos de Azure DevOps',
+  company: "O'Reilly",
+  period: '2026',
+  description:
+    'Formación en los fundamentos de Azure DevOps y su aplicación en la gestión del ciclo de vida del desarrollo de software, colaboración técnica y automatización de procesos de entrega.',
+  bullets: [
+    'Comprensión de los principios de integración continua (CI) y entrega continua (CD) mediante prácticas DevOps.',
+    'Gestión de repositorios, control de versiones y colaboración en proyectos de desarrollo.',
+    'Fundamentos de planificación, seguimiento de tareas y gestión de proyectos mediante Azure Boards.',
+  ],
+},
+{
   title: 'Power Automate Avanzado',
   company: "O'Reilly",
   period: '2026',
