@@ -86,7 +86,7 @@ export const technologies = [
       { name: 'AzureDevops', icon: 'azuredevops' },
       { name: 'Firebase', icon: 'firebase' },
       { name: 'Jira', icon: 'jira' },
-      { name: 'Power Platform', icon: 'paddle.svg' },
+      { name: 'Power Platform', icon: 'paddle' },
     ],
   },
   {
