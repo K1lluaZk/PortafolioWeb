@@ -394,6 +394,12 @@ export const certifications = [
     year: '2026',
     icon: 'docker',
   },
+    {
+    name: 'Habilidades de Liderazgo de Equipos',
+    issuer: 'Indotel',
+    year: '2025',
+    icon: 'team',
+  },
   {
     name: 'Desarrollo Web Full Stack',
     issuer: 'Indotel',
