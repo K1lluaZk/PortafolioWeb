@@ -20,25 +20,25 @@ export const about = {
     'Soy Desarrollador de software junior con enfoque en automatización de procesos e integración de sistemas, con experiencia formativa en desarrollo Full Stack y participación en entornos QA, aplicando conocimientos de desarrollo, pruebas y validación de soluciones tecnológicas.',
   values: [
     {
-      icon: 'code',
-      title: 'Código limpio',
-      description: 'Estructurado, mantenible y siguiendo buenas prácticas.',
-    },
-    {
-      icon: 'stack',
-      title: 'Full Stack',
-      description: 'Desde la base de datos hasta interfaces modernas.',
-    },
-    {
-      icon: 'design',
-      title: 'UI/UX',
-      description: 'Interfaces responsivas, accesibles y centradas en el usuario.',
-    },
-    {
-      icon: 'team',
-      title: 'Trabajo en equipo (CI/CD)',
-      description: 'Colaboración efectiva bajo metodologías ágiles.',
-    },
+    icon: 'code',
+    title: 'Código limpio',
+    description: 'Desarrollo de soluciones mantenibles, automatización de procesos, integración de IA generativa y construcción de agentes inteligentes.',
+  },
+  {
+    icon: 'stack',
+    title: 'Full Stack',
+    description: 'Diseño e integración de soluciones de extremo a extremo, gestión de bases de datos SQL, consumo de APIs y plataformas Low-Code.',
+  },
+  {
+    icon: 'design',
+    title: 'UI/UX',
+    description: 'Diseño de interfaces responsivas, accesibles y centradas en el usuario, aplicando principios de usabilidad y experiencia digital.',
+  },
+  {
+    icon: 'team',
+    title: 'Trabajo en equipo (CI/CD)',
+    description: 'Colaboración bajo Scrum y Kanban, fundamentos de PMI, integración continua, gestión de proyectos y conocimiento de normativas de protección de datos.',
+  },
   ],
 };
 
