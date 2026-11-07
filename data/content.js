@@ -352,6 +352,12 @@ export const education = [
 
 export const certifications = [
   {
+    name: 'Curso de Cloud Computing',
+    issuer: 'Google',
+    year: '2026',
+    icon: 'google',
+  },
+  {
     name: 'Curso De Scrum Basico',
     issuer: 'Scrum Inc',
     year: '2026',
