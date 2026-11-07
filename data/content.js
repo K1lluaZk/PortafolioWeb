@@ -326,6 +326,18 @@ export const education = [
     ],
   },
   {
+    title: 'Habilidades de Liderazgo de Equipos',
+    company: 'Instituto Dominicano de las Telecomunicaciones - INDOTEL',
+    period: '2025 — 2026',
+    description:
+      'Curso sobre habilidades de liderazgo y gestión de equipos de desarrollo.',
+    bullets: [
+      'Aplicación de principios de liderazgo ágil y gestión de equipos.',
+      'Negociación y resolución constructiva de conflictos.',
+      'Alineación de stakeholders y diseño de planes de bienestar',
+    ],
+  },
+  {
     title: 'Desarrollo Web Full Stack',
     company: 'Instituto Dominicano de las Telecomunicaciones - INDOTEL',
     period: '2025 — 2026',
@@ -398,7 +410,7 @@ export const certifications = [
     name: 'Habilidades de Liderazgo de Equipos',
     issuer: 'Indotel',
     year: '2025',
-    icon: 'team',
+    icon: 'windowsterminal',
   },
   {
     name: 'Desarrollo Web Full Stack',
