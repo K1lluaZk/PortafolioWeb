@@ -1,7 +1,7 @@
 export const profile = {
   name: 'Mario Suero',
   alias: 'K1lluaZk',
-  role: 'Desarrollador de Software',
+  role: 'Desarrollador de Software | Automatización y QA',
   tagline:
     'Construyo soluciones digitales eficientes, escalables y con atención al detalle en cada línea de código.',
   email: 'mario.suerodejesus@gmail.com',
@@ -17,7 +17,7 @@ export const about = {
   title: 'Sobre mí',
   subtitle: 'Conóceme',
   description:
-    'Soy desarrollador de software apasionado por crear soluciones que combinan funcionalidad y diseño. Me enfoco en escribir código limpio, mantenible y en aprender continuamente para entregar productos de calidad.',
+    'Soy Desarrollador de software junior con enfoque en automatización de procesos e integración de sistemas, con experiencia formativa en desarrollo Full Stack y participación en entornos QA, aplicando conocimientos de desarrollo, pruebas y validación de soluciones tecnológicas.',
   values: [
     {
       icon: 'code',
@@ -86,6 +86,7 @@ export const technologies = [
       { name: 'AzureDevops', icon: 'azuredevops' },
       { name: 'Firebase', icon: 'firebase' },
       { name: 'Jira', icon: 'jira' },
+      { name: 'Power Platform', icon: 'powerplatform' },
     ],
   },
   {
@@ -102,6 +103,9 @@ export const technologies = [
       { name: 'phpMyAdmin', icon: 'phpmyadmin' },
       { name: 'Selenium', icon: 'selenium' },
       { name: 'Postman', icon: 'postman' },
+      { name: 'Power automate', icon: 'powerautomate' },
+      { name: 'Power apps', icon: 'powerapps' },
+      { name: 'n8n', icon: 'n8n' },
     ],
   },
 ]
@@ -207,20 +211,71 @@ export const experience = [
     ],
   },
   {
-    title: 'Estudiante de Desarrollo de Software',
-    company: 'Formación académica',
-    period: '2024 — Actualidad',
+    title: 'Pasante de Desarrollo de Software',
+    company: 'Ministerio de Industria, Comercio y Mipymes (MICM)',
+    period: '2026 — Actualidad',
     description:
-      'Formación técnica en desarrollo de software con enfoque en aplicaciones web y buenas prácticas.',
+      'Desarrollador de software con enfoque en automatización de procesos e integración de sistemas.',
     bullets: [
-      'Desarrollo con .NET, C#, Python, JavaScript y Node.js.',
-      'Proyectos con arquitectura MVC, Metodologias Agiles y patrones de diseño.',
-      'Control de versiones con Git en entornos colaborativos.',
+      'Desarrollo e implementación de soluciones de automatización de procesos.',
+      'Diseño de flujos de trabajo para reducir tareas manuales.',
+      'Integración de herramientas y sistemas.',
+      'Análisis de procesos para identificar oportunidades de automatización.',
+      'Mantenimiento y optimización de soluciones existentes.',
+      'Desarrollo de lógica y validaciones mediante programación.',
     ],
   },
 ];
 
 export const education = [
+  {
+  title: 'Fundamentos de Arquitectura de Software',
+  company: 'Platzi',
+  period: '2026',
+  description:
+    'Curso introductorio sobre principios, patrones y conceptos fundamentales para el diseño de arquitecturas de software.',
+  bullets: [
+    'Principios fundamentales del diseño y la arquitectura de software.',
+    'Comprensión de patrones arquitectónicos y separación de responsabilidades.',
+    'Análisis de escalabilidad, mantenibilidad y organización de sistemas de software.',
+  ],
+},
+  {
+  title: 'Automatización con n8n',
+  company: 'Platzi',
+  period: '2026',
+  description:
+    'Curso sobre diseño e implementación de flujos de automatización e integración de servicios mediante n8n.',
+  bullets: [
+    'Creación y configuración de workflows utilizando nodos de n8n.',
+    'Integración de APIs y servicios externos mediante solicitudes HTTP.',
+    'Automatización de procesos y transferencia de información entre aplicaciones.',
+  ],
+},
+{
+  title: 'Power Automate Avanzado',
+  company: "O'Reilly",
+  period: '2026',
+  description:
+    'Curso técnico sobre automatización avanzada de procesos empresariales mediante Microsoft Power Automate.',
+  bullets: [
+    'Diseño y desarrollo de flujos automatizados para procesos empresariales.',
+    'Implementación de condiciones, validaciones y manejo de datos en flujos de trabajo.',
+    'Integración con servicios y herramientas del ecosistema Microsoft.',
+  ],
+},
+{
+  title: 'Curso de Cloud Computing',
+  company: 'Google',
+  period: '2026',
+  description:
+    'Curso introductorio sobre computación en la nube, sus fundamentos, servicios y aplicaciones en entornos tecnológicos.',
+  bullets: [
+    'Fundamentos de Cloud Computing y principales modelos de servicios en la nube.',
+    'Conceptos de infraestructura, almacenamiento y recursos computacionales en la nube.',
+    'Aplicaciones de la computación en la nube en el desarrollo, despliegue y escalabilidad de soluciones tecnológicas.',
+  ],
+},
   {
     title: 'Curso De Scrum Basico',
     company: 'Scrum Inc',
@@ -289,8 +344,8 @@ export const education = [
       'Formación técnica en desarrollo de software con enfoque en aplicaciones web y programación orientada a objetos.',
     bullets: [
       'Desarrollo con .NET, C# y arquitectura MVC.',
-      'Interfaces web con Node.js, HTML y CSS.',
-      'Bases de datos relacionales y control de versiones.',
+      'Proyectos con arquitectura MVC, Metodologias Agiles y patrones de diseño.',
+      'Control de versiones con Git en entornos colaborativos.',
     ],
   },
 ];
