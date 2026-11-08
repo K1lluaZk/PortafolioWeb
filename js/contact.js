@@ -7,13 +7,20 @@ async function loadEmailJS() {
   return window.emailjs;
 }
 
-async function getConfig() {
-  try {
-    const config = await import('./config.js');
-    return config.emailjsConfig;
-  } catch {
+function getConfig() {
+  const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+  if (!serviceId || !templateId || !publicKey) {
     return null;
   }
+
+  return {
+    serviceId,
+    templateId,
+    publicKey,
+  };
 }
 
 function validateForm(data) {
@@ -78,7 +85,7 @@ export function initContact() {
       config.publicKey === 'YOUR_PUBLIC_KEY'
     ) {
       feedback.textContent =
-        'Formulario configurado. Añade tus credenciales en js/config.js';
+        'Formulario configurado. Añade tus credenciales en el archivo .env';
       feedback.className = 'mt-4 text-sm text-gray-400';
       feedback.setAttribute('role', 'status');
       submitBtn.disabled = false;
