@@ -129,6 +129,10 @@
     @apply bg-white/[0.02] text-gray-500 border-white/5;
   }
 
+  .type-badge {
+    @apply inline-block px-3 py-1 text-xs rounded-full border;
+  }
+  
   #header.scrolled {
     @apply bg-bg/70 backdrop-blur-md border-white/5;
   }
