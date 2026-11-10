@@ -9,6 +9,7 @@ Portafolio personal desarrollado para presentar mi perfil como desarrollador de 
   <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white" alt="Tailwind CSS">
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" alt="JavaScript">
   <img src="https://img.shields.io/badge/PostCSS-DD3A0A?style=flat&logo=postcss&logoColor=white" alt="PostCSS">
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white" alt="Vite JS">
   <img src="https://img.shields.io/badge/EmailJS-FFB300?style=flat" alt="EmailJS">
   <img src="https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white" alt="Vercel">
 </p>
@@ -48,6 +49,7 @@ La identidad visual está inspirada en un **cielo nocturno**, utilizando un fond
 - HTML5
 - Tailwind CSS
 - JavaScript (ES6)
+- Vite JS
 
 ### Estilos
 
@@ -136,6 +138,7 @@ Los mensajes enviados incluyen:
 # 📱 Capturas de Pantalla
 
 <img width="1326" height="633" alt="image" src="https://github.com/user-attachments/assets/366c5fe7-a60f-4a87-8bdd-5d92e4ae672e" />
+<img width="1905" height="946" alt="image" src="https://github.com/user-attachments/assets/13af6ca3-651f-4ca8-9fdf-050b1cdf4ddb" />
 <img width="1297" height="547" alt="image" src="https://github.com/user-attachments/assets/33473611-846d-4215-b987-f23844ea6883" />
 
 
