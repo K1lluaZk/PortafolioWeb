@@ -130,7 +130,7 @@
   }
 
   .type-badge {
-    @apply inline-block px-3 py-1 text-xs rounded-full border;
+    @apply bg-white/10 text-white border-white/20;
   }
   
   #header.scrolled {
