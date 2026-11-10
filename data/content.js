@@ -52,6 +52,7 @@ export const technologies = [
       { name: 'Tailwind CSS', icon: 'tailwindcss' },
       { name: 'EJS', icon: 'ejs' },
       { name: 'Bootstrap', icon: 'bootstrap' },
+      { name: 'Vite', icon: 'vite' },
     ],
   },
   {
