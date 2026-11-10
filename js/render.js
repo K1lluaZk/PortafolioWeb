@@ -87,7 +87,7 @@ function createProjectsSection() {
           </div>
 
           <div class="flex flex-col items-end gap-2 shrink-0">
-            <span class="tag">${projectTypes[project.type] || 'Aplicación web'}</span>
+            <span class="type-badge">${projectTypes[project.type] || 'Aplicación web'}</span>
             <span class="status-badge ${project.status}">
               ${statusLabels[project.status]}
             </span>
