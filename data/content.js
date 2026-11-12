@@ -107,6 +107,7 @@ export const technologies = [
       { name: 'Power automate', icon: 'powerautomate' },
       { name: 'Power apps', icon: 'powerapps' },
       { name: 'n8n', icon: 'nano' },
+      { name: 'Figma', icon: 'figma' },
     ],
   },
 ]
